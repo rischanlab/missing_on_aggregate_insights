@@ -167,13 +167,13 @@ df_measure = df_measure.reindex(columns=m_columns)
 
 
 mlist = [0.1,0.2,0.3,0.4,0.5,0.6,0.7,0.8,0.9]
-a_list = [1.01, 1.03, 1.06, 1.07, 1.1, 1.5, 2.0, 2.5, 3.0, 3.5, 4.0]
+a_list = [1.1, 1.2, 1.3, 1.4, 1.5, 1.7]
 N_samples = 784416
 
 print("Data missing export to Postgre")
 for i in mlist:
     for a in a_list:
-        for j in range(20):
+        for j in range(100):
             x = int(i * 100)
             #print(int(i * 100), j)
             #print(df)

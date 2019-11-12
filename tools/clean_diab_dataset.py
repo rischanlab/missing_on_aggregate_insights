@@ -2,7 +2,7 @@ import numpy as np
 import pandas as pd
 from sqlalchemy import create_engine
 
-engine = create_engine(r'postgresql+psycopg2://postgres:zenvisage@localhost:5432/mac_small_experiment')
+engine = create_engine(r'postgresql+psycopg2://postgres:zenvisage@localhost:5432/large_experiment_missing_predicate')
 
 
 # read the file and create a pandas dataframe

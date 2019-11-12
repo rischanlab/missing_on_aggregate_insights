@@ -26,7 +26,7 @@ def get_topk_aggregate(k, file):
     file_name = file  # name of your excel file
     df = read_excel(file_name, sheet_name=my_sheet)
     df.drop(df.columns[[0,4]], axis=1, inplace=True)
-    df = df.drop(df[df.Attributes == 'readmitted'].index)
+    df = df.drop(df[df.Attributes == 'gender'].index)
     df = df.head(k).values.tolist()
     x = convert_to_one(df)
     return x # shows headers with top 5 rows
